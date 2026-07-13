@@ -17,5 +17,19 @@ ways:
 using ASCII values.
 '''
 
-# ord() converts a character into its ASCII value.
-# chr() converts an ASCII value back into a characher.
+'''
+ord() converts a character into its ASCII value.
+chr() converts an ASCII value back into a characher.
+
+#Lowercase ASCII = Uppercase ASCII + 32
+#Uppercase = Lowercase - 32
+'''
+
+s = input()
+up=""
+for ch in s:
+    up = up + chr(ord(ch)-32)
+
+print(up)
+
+
