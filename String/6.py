@@ -23,6 +23,7 @@ Constraints:
  split and join
 '''
 
+#loop
 s = input()
 n = ""
 for ch in s:
@@ -31,4 +32,8 @@ for ch in s:
 
 print (n)
 
-
+'''
+#replace
+s = input()
+print(s.replace(" ",""))
+'''
