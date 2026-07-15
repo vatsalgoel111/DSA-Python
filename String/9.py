@@ -59,4 +59,3 @@ else:
         print(False)
 
 
-#26 small letters
