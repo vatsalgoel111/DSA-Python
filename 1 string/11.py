@@ -16,12 +16,15 @@ Constraints:
 '''
 
 s = input()
-seen = {}
-answer = ""
+
+arr = [0] * 26  #arr for lowercase letters
+answer = ""     #empty string
 
 for ch in s:
-    if ch not in seen:
-        answer += ch
-        seen[ch] = True
+    index = ord(ch) - ord('a')   #ord('a') = 97
 
-print(answer)
+    if arr[index] == 0:
+        answer = answer + ch
+        arr[index] = 1
+
+print (answer)
